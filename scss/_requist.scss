@@ -1,0 +1,100 @@
+.requist{
+	&__inner{
+		padding: 30px;
+		border: 2px solid #FFFFFF;
+		border-radius: 40px;
+		background: radial-gradient(25.54% 71.56% at 71.36% 78.16%, rgba(211, 229, 207, 0.3) 0%, rgba(211, 229, 207, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(35.81% 100% at 0% 100%, rgba(207, 213, 229, 0.3) 0%, rgba(207, 213, 229, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(60.59% 64.89% at 0% 0%, rgba(255, 181, 61, 0.1) 0%, rgba(255, 181, 61, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFEFC;
+	}
+	&__title{
+		padding-bottom: 10px;
+	}
+	&__subtitle{
+		padding-bottom: 20px;
+	}
+	&__inputs{
+		display: flex;
+		flex-wrap: wrap;
+		label{
+			color: #828299;
+			margin-top: 10px;
+		}
+		input{
+			width: 100%;
+			height: 60px;
+			margin-top: 10px;
+			display: block;
+			border: 2px solid #FFFFFF;
+			border-radius: 10px;
+			padding-left: 25px;
+		}
+	}
+	&__buttons{
+		padding-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		.btn{
+			width: 236px;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.subtitle{
+			width: 300px;
+		}
+	}
+}
+@media(min-width: 503px){
+	.requist{
+		&__inputs{
+			label{
+				margin-right: 10px;
+			}
+			input{
+				width: 274px;
+				height: 60px;
+			}
+		}
+		&__buttons{
+			.subtitle{
+				margin-left: 30px;
+				margin-top: 11px;
+			}
+		}
+	}
+}
+@media(min-width: 1400px){
+	.requist{
+		&__inner{
+			margin-top: 120px;
+		}
+		&__inputs{
+			label{
+				margin-right: 10px;
+			}
+		}
+		&__buttons{
+			.subtitle{
+				margin-left: 30px;
+				margin-top: 11px;
+			}
+		}
+		.container{
+			position: relative;
+		}
+		&__content{
+			max-width: 710px;
+		}
+		.requist__content::after{
+			content: "";
+			background-image: url(../images/offer-img.png);
+			width: 590px;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			border-radius: 40px;
+		}
+	}
+}

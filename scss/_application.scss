@@ -1,0 +1,37 @@
+.application{
+	display: none;
+	&__content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__title{
+		margin-bottom: 20px;
+	}
+	&__subtitle{
+		margin-bottom: 50px;
+	}
+	&__swiper{
+		max-width: 710px;
+		margin: 0px;
+		margin-bottom: 30px;
+		.content{
+			padding: 30px 40px 30px 40px;
+		}
+	}
+	&__swiper-slide{
+		background-color: #fff;
+		border-radius: 30px;
+		.subject{
+			padding-bottom: 10px;
+		}
+	}
+	&__swiper:hover{
+		opacity: 0.5;
+	}
+}
+@media(min-width: 1500px){
+	.application{
+		display: block;
+	}
+}

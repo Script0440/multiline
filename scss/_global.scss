@@ -1,0 +1,85 @@
+.container{
+	margin: 0 auto;
+	max-width: 1430px;
+	margin-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+h1{
+	font-weight: 600;
+	font-size: 30px;
+	color: #fff;
+}
+a{
+	text-decoration: none;
+	color: #192040;
+}
+main{
+	background-image: url(../images/bg.png);
+}
+.btn{
+	background-color: #FF2E51;
+	border-radius: 50px;
+	color: #fff;
+	transition: 0.5s all;
+}
+.btn:hover{
+	transition: 0.5s all;
+	background-color: #FA052E;
+	box-shadow: 0px 15px 20px -15px #FF0D35;
+}
+button{
+	background: transparent;
+	border: transparent;
+}
+.swiper-button-next::after,.swiper-button-prev::after{
+	color: #fff;
+	font-size: 18px;
+}
+.swiper-pagination-bullet{
+	opacity: 0.3;
+	background-color: #FFFEFC;
+	width: 100px;
+	height: 3px;
+	border-radius: 0;
+}
+.swiper-pagination-bullet-active{
+	opacity: 1;
+}
+.title{
+	color: #192040;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 31px;
+}
+.subtitle{
+	color: #828299;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 140%;
+}
+.subject{
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+}
+.arrow-more{
+	position: relative;
+}
+.arrow-more::after,.arrow-more::before{
+	content: "";
+	background-color: #272834;
+	height: 2px;
+	width: 7px;
+	position: absolute;
+	margin-top: 8px;
+	transition: 0.5s all;
+}
+.arrow-more::after{
+	right: -17px;
+	transform: rotate(-45deg);
+}
+.arrow-more::before{
+	right: -12px;
+	transform: rotate(45deg);
+}

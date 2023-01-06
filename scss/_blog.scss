@@ -1,0 +1,78 @@
+.blog{
+	&__inner{
+		padding-top: 60px;
+	}
+	&__swiper-slide{
+		border-radius: 30px;
+		background-color: #fff;
+	}
+	&__swiper-buttons{
+		width: 100px;
+		height: 100px;
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		.swiper-button-next::after,.swiper-button-prev::after{
+			color: #D2D2D9;
+		}
+	}
+	.swiper-scrollbar{
+		bottom: 20px;
+		bottom: 50px;
+		width: 70%;
+		margin-left: 100px;
+		height: 2px !important;
+}
+	&__swiper{
+		padding-bottom: 80px;
+		.subject{
+			margin-bottom: 10px;
+		}
+		.views::after{
+			content: "";
+			background-image: url(../images/eye.png);
+			width: 20px;
+			height: 20px;
+			float: left;
+			background-repeat: no-repeat;
+		}
+		.subtitle{
+			height: 60px;
+		}
+		img{
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.content{
+			padding: 20px 30px;
+			border-radius: 30px;
+			
+		}
+		.bottom__content{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+			color: #828299;
+		}
+		.btn{
+			position: absolute;
+			top: 129px;
+			padding: 6px 12px;
+		}
+	}
+}
+@media(min-width:1400px){
+	.blog{
+		&__inner{
+			.btn{
+				position: absolute;
+				top: 180px;
+				padding: 6px 12px;
+			}
+		}
+		.swiper{
+			padding-bottom: 100px;
+		}
+	}
+}
