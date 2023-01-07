@@ -143,6 +143,13 @@
 }
 @media (min-width: 992px) {
 	.get-started {
+		&__items{
+			justify-content: center;
+			.item{
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
 		&__inner {
 			padding-top: 50px;
 		}
@@ -230,6 +237,24 @@
 			}
 			.wallpaper__show-more {
 			}
+		}
+	}
+}
+@media(min-width: 1200px) {
+	.get-started{
+		&__items{
+			justify-content: space-around;
+			.item{
+				margin: 0px;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+@media(min-width: 1450px) {
+	.get-started{
+		&__items{
+			justify-content: space-between;
 		}
 	}
 }
